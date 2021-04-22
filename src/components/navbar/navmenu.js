@@ -90,17 +90,17 @@ const NavMenu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <NavLinksList>
-        <Link href="/about/">
+        <Link href="/work/">
           <a>
             <NavItem underlineColour="#10dfac">Work</NavItem>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/about/">
           <a>
             <NavItem underlineColour="#ff5736">About</NavItem>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/contact/">
           <a>
             <NavItem underlineColour="#a17cff">Contact</NavItem>
           </a>
