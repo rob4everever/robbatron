@@ -11,10 +11,7 @@ import { theme } from '../styles/theme';
 import { GlobalStyles } from '../styles/global';
 import Metadata from './metadata';
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  pageConfig: PropTypes.object.isRequired,
-};
+import { Navbar } from './navbar';
 
 export default function Layout({ children, pageConfig }) {
   return (
@@ -22,8 +19,14 @@ export default function Layout({ children, pageConfig }) {
       <Metadata pageTitle={pageConfig.title} pageDescription={pageConfig.description} />
       <ThemeProvider theme={theme}>
         <GlobalStyles />
+        <Navbar primaryColour={pageConfig.primaryColour} />
         <main>{children}</main>
       </ThemeProvider>
     </>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  pageConfig: PropTypes.object.isRequired,
+};
