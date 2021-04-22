@@ -56,7 +56,7 @@ const NavLinksList = styled.ul`
   }
 `;
 
-const NavLink = styled.a`
+const NavItem = styled.li`
   width: auto;
   padding: 0.3rem 0;
   border-bottom: solid transparent 4px;
@@ -90,14 +90,20 @@ const NavMenu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <NavLinksList>
-        <Link href="/">
-          <NavLink underlineColour="#10dfac">Work</NavLink>
+        <Link href="/about/">
+          <a>
+            <NavItem underlineColour="#10dfac">Work</NavItem>
+          </a>
         </Link>
         <Link href="/">
-          <NavLink underlineColour="#ff5736">About</NavLink>
+          <a>
+            <NavItem underlineColour="#ff5736">About</NavItem>
+          </a>
         </Link>
         <Link href="/">
-          <NavLink underlineColour="#a17cff">Contact</NavLink>
+          <a>
+            <NavItem underlineColour="#a17cff">Contact</NavItem>
+          </a>
         </Link>
       </NavLinksList>
       <SocialMediaList>
