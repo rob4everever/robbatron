@@ -1,0 +1,32 @@
+{
+  "name": "robbatron",
+  "description": "Personal portfolio to display my works, built using React and NextJS.",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fontsource/oswald": "^4.2.2",
+    "@fontsource/roboto": "^4.2.3",
+    "babel-plugin-styled-components": "^1.12.0",
+    "next": "10.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.2.3",
+    "styled-normalize": "^8.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rob4everever/robbatron"
+  },
+  "bugs": {
+    "url": "https://github.com/rob4everever/robbatron/issues"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
